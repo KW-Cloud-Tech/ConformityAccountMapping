@@ -1,5 +1,5 @@
 # ConformityAccountMapping
-Generates a csv mapping the AWS account
+Generates a csv mapping the AWS account to the Conformity account ids
 
 ## Usage
 This script calls the Trend Micro Cloud One Conformity API: https://github.com/cloudconformity/documentation-api 
