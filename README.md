@@ -18,3 +18,6 @@ You will also be prompted to enter the API key for your Conformity user. <br />
 Refer to https://www.cloudconformity.com/help/public-api/api-keys.html
 
 The output is a csv file.
+
+### Support
+This script is not formally supported by Trend Micro
