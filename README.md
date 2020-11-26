@@ -8,8 +8,8 @@ Install jq on your linux/mac https://stedolan.github.io/jq/ <br />
 Run the script from the terminal. You can enter Conformity account ids as comma separated arguments. <br />
 If left blank, the script will pull results for all your accounts. E.g.
 
-`$ ./CostRuleData` <br />
-`$ ./CostRuleData acbds2347,sdlccn287`
+`$ ./accountIds_cc.sh` <br />
+`$ ./accountIds_cc.sh acbds2347,sdlccn287`
   
 You will be prompted to enter the AWS region your Conformity instance is hosted in, eg:
 us-west-2
