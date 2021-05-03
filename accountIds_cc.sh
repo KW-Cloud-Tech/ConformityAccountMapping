@@ -28,5 +28,5 @@ curl -L -X GET \
         "https://$region-api.cloudconformity.com/v1/accounts" \
         -H "Content-Type: application/vnd.api+json" \
         -H "Authorization: ApiKey $apikey" \
-	| jq -r '.data[] | {"CloudType": .attributes | .["cloud-type"], "Conformity-ID" : .id, "AWSAccount" : .attributes | .["awsaccount-id"], "AzureSubscription": .attributes | .["cloud-data"] | .azure.subscriptionId } | keys_unsorted, map(.) | @csv' | awk 'NR==1 || NR%2==0'  >> AWS_CC_mapping_$TIMESTAMP.csv
+	| jq -r '.data[] | {"CloudType": .attributes | .["cloud-type"], "Account-Name" : .attributes | .["name"], "Conformity-ID" : .id, "AWSAccount" : .attributes | .["awsaccount-id"], "AzureSubscription": .attributes | .["cloud-data"] | .azure.subscriptionId } | keys_unsorted, map(.) | @csv' | awk 'NR==1 || NR%2==0'  >> AWS_CC_mapping_$TIMESTAMP.csv
 printf "\n'AWS_CC_mapping$TIMESTAMP.csv' created\n"
