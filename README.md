@@ -1,6 +1,9 @@
 # ConformityAccountMapping
 Generates a csv mapping the AWS or Azure account to the Conformity account ids
 
+## Requires
+jq - https://stedolan.github.io/jq/
+
 ## Usage
 This script calls the Trend Micro Cloud One Conformity API: https://github.com/cloudconformity/documentation-api 
 
